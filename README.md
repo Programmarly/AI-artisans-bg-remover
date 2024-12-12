@@ -1,2 +1,3 @@
-# AI artisans bgremover
-An API designed to streamline e-commerce product image enhancement by removing backgrounds. Accepts public image URLs and customizable coordinates to focus on specific product areas, outputs a transparent PNG, and returns a publicly accessible link for the processed image. Perfect for automating professional product listings!
+## Background Removal API for Product Images
+# Overview
+This API is designed to enhance e-commerce platforms by automating the process of removing backgrounds from product images. With the ability to specify coordinates for a targeted area, this tool ensures clean and professional images, improving the visual appeal of product listings.
