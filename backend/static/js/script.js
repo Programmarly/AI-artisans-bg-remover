@@ -1,4 +1,4 @@
-const API_URL = "http://127.0.0.1:5500/process-image";
+const API_URL = "https://ai-artisans.onrender.com/process-image";
 
 async function processImage() {
   const imageUrl = document.getElementById("image-url").value;
@@ -56,25 +56,24 @@ function toggleLoading(isLoading) {
  * Downloads the processed image displayed in the result container.
  */
 function downloadImage() {
-    const processedImage = document.getElementById("processed-image");
-    const imageUrl = processedImage.src;
-  
-    if (!imageUrl) {
-      alert("No processed image available to download.");
-      return;
-    }
-  
-    // Create a temporary anchor element for downloading
-    const anchor = document.createElement("a");
-    anchor.href = imageUrl;
-    anchor.download = "processed-image.png"; // Default file name
-    document.body.appendChild(anchor);
-  
-    // Trigger the download and clean up
-    anchor.click();
-    document.body.removeChild(anchor);
+  const processedImage = document.getElementById("processed-image");
+  const imageUrl = processedImage.src;
+
+  if (!imageUrl) {
+    alert("No processed image available to download.");
+    return;
   }
-  
+
+  // Create a temporary anchor element for downloading
+  const anchor = document.createElement("a");
+  anchor.href = imageUrl;
+  anchor.download = "processed-image.png"; // Default file name
+  document.body.appendChild(anchor);
+
+  // Trigger the download and clean up
+  anchor.click();
+  document.body.removeChild(anchor);
+}
 
 document
   .getElementById("process-button")
