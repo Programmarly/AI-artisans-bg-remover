@@ -5,6 +5,8 @@ flask-cors
 flask-limiter
 onnxruntime
 flask-talisman
+gunicorn
+
 # Image Processing
 pillow
 rembg
