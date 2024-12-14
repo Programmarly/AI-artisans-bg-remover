@@ -138,7 +138,8 @@ The repository is organized into the following files:
 A Postman collection with example requests and responses is included in the repository under the name `Test objects.postman_collection.json`.  
 To use it:
 1. Import the collection into Postman.
-2. Update the environment variables to match your API’s host and endpoints.
+2. Update the environment variables to match your API’s host (e.g., `http://localhost:5500`) and endpoints.
+
 
 ---
 
