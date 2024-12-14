@@ -1,0 +1,135 @@
+{
+	"info": {
+		"_postman_id": "f0d4f7eb-a814-4fd3-a3a2-e604c179671b",
+		"name": "Test objects",
+		"description": "This is a sample collection containing images of day to day objects that can be listed on ecommerce websites after removing the background.",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "37817270"
+	},
+	"item": [
+		{
+			"name": "laptop",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"image_url\" : \"https://img.freepik.com/free-photo/laptop-stone-surface-sea-background_1232-430.jpg\",\r\n  \"bounding_box\" : { \r\n    \"x_min\": 0 ,\r\n    \"y_min\": 0 ,\r\n    \"x_max\": 626 ,\r\n    \"y_max\": 417\r\n  }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5500/process-image",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5500",
+					"path": [
+						"process-image"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "car",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"image_url\" : \"https://images.all-free-download.com/images/thumbjpg/ford_mustang_car_215784.jpg\",\r\n  \"bounding_box\" : { \r\n    \"x_min\": 0 ,\r\n    \"y_min\": 0 ,\r\n    \"x_max\": 586 ,\r\n    \"y_max\": 388\r\n  }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5500/process-image",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5500",
+					"path": [
+						"process-image"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "perfume",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"image_url\" : \"https://cdn.pixabay.com/photo/2023/06/01/06/21/perfume-8032808_640.jpg\",\r\n  \"bounding_box\" : { \r\n    \"x_min\": 0 ,\r\n    \"y_min\": 0 ,\r\n    \"x_max\": 640 ,\r\n    \"y_max\": 640\r\n  }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5500/process-image",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5500",
+					"path": [
+						"process-image"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "couch",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"image_url\" : \"https://www.thespruce.com/thmb/1Vc-S34Iu34OdsnfG4YP5bBso4w=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/signs-to-replace-your-couch-4165258-hero-5266fa7b788c41f6a02f24224a5de29b.jpg\",\r\n  \"bounding_box\" : { \r\n    \"x_min\": 0 ,\r\n    \"y_min\": 0 ,\r\n    \"x_max\": 626 ,\r\n    \"y_max\": 417\r\n  }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5500/process-image",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5500",
+					"path": [
+						"process-image"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

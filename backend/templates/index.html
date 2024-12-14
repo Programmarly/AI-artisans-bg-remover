@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI Artisans Background Remover</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/style.css') }}"
+    />
+  </head>
+  <body>
+    <header>
+      <h1>AI Artisans Background Remover</h1>
+    </header>
+    <main>
+      <h2>Remove Any Background Effortlessly</h2>
+      <p>
+        Make your product images studio-perfect for your e-commerce website.
+        Fast, easy, and reliable.
+      </p>
+      <div class="search-container">
+        <input
+          type="text"
+          id="image-url"
+          class="search-bar"
+          placeholder="Enter image URL"
+        />
+        <div class="input-group">
+          <input
+            type="text"
+            id="x-min"
+            class="input-field"
+            placeholder="x_min"
+          />
+          <input
+            type="text"
+            id="y-min"
+            class="input-field"
+            placeholder="y_min"
+          />
+          <input
+            type="text"
+            id="x-max"
+            class="input-field"
+            placeholder="x_max"
+          />
+          <input
+            type="text"
+            id="y-max"
+            class="input-field"
+            placeholder="y_max"
+          />
+        </div>
+        <button class="submit-btn" id="process-button">Upload</button>
+      </div>
+      <div id="loader" style="display: none">Processing...</div>
+      <div class="result-container" id="result-container" style="display: none">
+        <img
+          id="processed-image"
+          src=""
+          alt="Processed Image"
+          height="200px"
+          width="auto"
+        />
+        <p>
+          Processed Image Link:
+          <a
+            id="processed-image-link"
+            href="#"
+            target="_blank"
+            style="
+              text-decoration: underline;
+              color: antiquewhite;
+              font-weight: 500;
+            "
+            >View Image</a
+          >
+        </p>
+        <button class="download-btn" id="download-btn">Download</button>
+      </div>
+    </main>
+    <footer>
+      <p>
+        &copy; 2024 AI Artisans. Made with ❤ by <a href="#">Harshit Soni</a>
+      </p>
+    </footer>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+  </body>
+</html>

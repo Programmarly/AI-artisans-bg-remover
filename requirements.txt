@@ -1,0 +1,27 @@
+# Core Dependencies
+aiohttp
+flask
+flask-cors
+flask-limiter
+onnxruntime
+flask-talisman
+# Image Processing
+pillow
+rembg
+
+# Task Scheduling
+APScheduler
+
+# HTTP Requests
+requests
+# Cloudinary Integration
+cloudinary
+
+# Data Validation
+pydantic
+
+# Optional Extras
+python-multipart
+python-jose
+python-dotenv
+python-env
